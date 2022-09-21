@@ -1,0 +1,107 @@
+- var pageTitle = 'TV'
+
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    style
+        include styles/normilize.css
+        include styles/style.css
+  body
+    include modules/header
+
+    section.section-banner
+      img(src="images/banner.png", alt="banner").section-banner__image
+      .container.container-banner
+        .banner
+          h1.banner__title Zack Snyder's Justice League
+          .banner-info
+            span.banner-info__year 2021
+            span.banner-info__age 18+
+            span.banner-info__time 4h 2min
+            span.banner-info__rating 8.8
+          p.banner__text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+          .banner-control
+            button.banner-control__btn.banner-control__btn-main Watch
+            button.banner-control__btn.banner-control__btn-more More information
+
+    section.section
+      .container
+        h2.section__h2
+          a(href="#").section__h2-link Trending TV Shows
+        .movies
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster01.png", alt="poster01").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster02.png", alt="poster02").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster03.png", alt="poster03").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster04.png", alt="poster04").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster05.png", alt="poster05").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster06.png", alt="poster06").movies__img
+
+    section.section
+      .container
+        h2.section__h2
+          a(href="#").section__h2-link Trending Movies
+        .movies
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster01.png", alt="poster01").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster02.png", alt="poster02").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster03.png", alt="poster03").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster04.png", alt="poster04").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster05.png", alt="poster05").movies__img
+          .movies-item
+            a(href="#").movies__link
+              img(src="images/posters/poster06.png", alt="poster06").movies__img
+        button.section__btn See more
+
+    section.section
+      .container
+        h2.section__h2
+          a(href="#").section__h2-link Popular Genres
+        .genres
+          .genres-item.genres-item_romance
+            img(src="images/genres/romance.svg", alt="romance")
+            h3.genres__title Romance
+          .genres-item.genres-item_drama
+            img(src="images/genres/drama.svg", alt="drama")
+            h3.genres__title Drama
+          .genres-item.genres-item_historical
+            img(src="images/genres/historical.svg", alt="historical")
+            h3.genres__title Historical
+          .genres-item.genres-item_action
+            img(src="images/genres/action.svg", alt="action")
+            h3.genres__title Action
+          .genres-item.genres-item_sci-fi
+            img(src="images/genres/sci-fi.svg", alt="sci-fi")
+            h3.genres__title Sci-fi
+          .genres-item.genres-item_horror
+            img(src="images/genres/horror.svg", alt="horror")
+            h3.genres__title Horror
+          .genres-item.genres-item_comedy
+            img(src="images/genres/comedy.svg", alt="comedy")
+            h3.genres__title Comedy
+          .genres-item.genres-item_documentary
+            img(src="images/genres/documentary.svg", alt="documentary")
+            h3.genres__title Documentary
+
+    include modules/footer
